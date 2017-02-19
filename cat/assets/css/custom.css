@@ -1,0 +1,658 @@
+/* Global Button Styles */
+a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size:14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+    height: 450%;
+}
+a.animated-button:link, a.animated-button:visited{
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    background-color: #06425c;
+    font-size:18px;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    max-width: 250px;
+    padding: 50px 0;
+    font-family: 'Trirong',serif;
+    border: 10px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.2);
+    margin: 10px auto 10px;
+}
+
+/* Victoria Buttons */
+
+a.animated-button.victoria-one {
+    border: 2px solid #D24D57;
+}
+a.animated-button.victoria-one:after {
+    background: #D24D57;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+a.animated-button.victoria-two {
+    border: 2px solid #D24D57;
+}
+a.animated-button.victoria-two:after {
+    background: #D24D57;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+a.animated-button.victoria-three {
+    border: 2px solid #D24D57;
+}
+a.animated-button.victoria-three:after {
+    background: #D24D57;
+    opacity: .5;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+a.animated-button.victoria-three:hover:after {
+    height: 140%;
+    opacity: 1;
+}
+a.animated-button.victoria-four {
+    border: 2px solid #D24D57;
+}
+a.animated-button.victoria-four:after {
+    background: #D24D57;
+    opacity: .5;
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+a.animated-button.victoria-four:hover:after {
+    opacity: 1;
+    height: 600% !important;
+}
+/* Sandy Buttons */
+
+a.animated-button.sandy-one {
+    border: 2px solid #AEA8D3;
+    color: #FFF;
+}
+a.animated-button.sandy-one:after {
+    border: 3px solid #AEA8D3;
+    opacity: 0;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+a.animated-button.sandy-one:hover:after {
+    height: 120% !important;
+    opacity: 1;
+    color: #FFF;
+}
+a.animated-button.sandy-two {
+    border: 2px solid #AEA8D3;
+    color: #FFF;
+}
+a.animated-button.sandy-two:after {
+    border: 3px solid #AEA8D3;
+    opacity: 0;
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+a.animated-button.sandy-two:hover:after {
+    height: 600% !important;
+    opacity: 1;
+    color: #FFF;
+}
+a.animated-button.sandy-three {
+    border: 2px solid #AEA8D3;
+    color: #FFF;
+}
+a.animated-button.sandy-three:after {
+    border: 3px solid #AEA8D3;
+    opacity: 0;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+a.animated-button.sandy-three:hover:after {
+    height: 400% !important;
+    opacity: 1;
+    color: #FFF;
+}
+a.animated-button.sandy-four {
+    border: 2px solid #AEA8D3;
+    color: #FFF;
+}
+a.animated-button.sandy-four:after {
+    border: 3px solid #AEA8D3;
+    opacity: 0;
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(25deg);
+    -ms-transform: translateY(-50%) translateX(-50%) rotate(25deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(25deg);
+    transform: translateY(-50%) translateX(-50%) rotate(25deg);
+}
+a.animated-button.sandy-four:hover:after {
+    height: 400% !important;
+    opacity: 1;
+    color: #FFF;
+}
+/* Gibson Buttons */
+
+a.animated-button.gibson-one {
+    border: 2px solid #65b37a;
+    color: #FFF;
+}
+a.animated-button.gibson-one:after {
+    opacity: 0;
+    background-image: -webkit-linear-gradient( transparent 50%, rgba(101,179,122,0.2) 50%);
+    background-image: -moz-linear-gradient(transparent 50%, rgba(101,179,122,0.2) 50%);
+    background-size: 10px 10px;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+a.animated-button.gibson-one:hover:after {
+    height: 600% !important;
+    opacity: 1;
+    color: #FFF;
+}
+a.animated-button.gibson-two {
+    border: 2px solid #65b37a;
+    color: #FFF;
+}
+a.animated-button.gibson-two:after {
+    opacity: 0;
+    background-image: -webkit-linear-gradient( transparent 50%, rgba(101,179,122,0.2) 50%);
+    background-image: -moz-linear-gradient(transparent 50%, rgba(101,179,122,0.2) 50%);
+    background-size: 10px 10px;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+a.animated-button.gibson-two:hover:after {
+    height: 600% !important;
+    opacity: 1;
+    color: #FFF;
+}
+a.animated-button.gibson-three {
+    border: 2px solid #65b37a;
+    color: #FFF;
+}
+a.animated-button.gibson-three:after {
+    opacity: 0;
+    background-image: -webkit-linear-gradient( transparent 50%, rgba(101,179,122,0.2) 50%);
+    background-image: -moz-linear-gradient(transparent 50%, rgba(101,179,122,0.2) 50%);
+    background-size: 10px 10px;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+a.animated-button.gibson-three:hover:after {
+    height: 600% !important;
+    opacity: 1;
+    color: #FFF;
+}
+a.animated-button.gibson-four {
+    border: 2px solid #65b37a;
+    color: #FFF;
+}
+a.animated-button.gibson-four:after {
+    opacity: 0;
+    background-image: -webkit-linear-gradient( transparent 50%, rgba(101,179,122,0.2) 50%);
+    background-image: -moz-linear-gradient(transparent 50%, rgba(101,179,122,0.2) 50%);
+    background-size: 10px 10px;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%));
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+a.animated-button.gibson-four:hover:after {
+    height: 600% !important;
+    opacity: 1;
+    color: #FFF;
+}
+/* Thar Buttons */
+
+a.animated-button.thar-one {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid #F7CA18;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-one:hover {
+    color: #fff !important;
+    background-color:#1f6382;
+    text-shadow: none;
+}
+a.animated-button.thar-one:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+a.animated-button.thar-one:before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #fff !important;
+    background: #1f6382;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-two {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid #F7CA18;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-two:hover {
+    color: #fff !important;
+    background-color: transparent;
+    text-shadow: ntwo;
+}
+a.animated-button.thar-two:hover:before {
+    top: 0%;
+    bottom: auto;
+    height: 100%;
+}
+a.animated-button.thar-two:before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #F7CA18;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-three {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid #F7CA18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+a.animated-button.thar-three:hover {
+    color: #000 !important;
+    background-color: transparent;
+    text-shadow: nthree;
+}
+a.animated-button.thar-three:hover:before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+}
+a.animated-button.thar-three:before {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #F7CA18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+a.animated-button.thar-four {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid #F7CA18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+a.animated-button.thar-four:hover {
+    color: #000 !important;
+    background-color: transparent;
+    text-shadow: nfour;
+}
+a.animated-button.thar-four:hover:before {
+    right: 0%;
+    left: auto;
+    width: 100%;
+}
+a.animated-button.thar-four:before {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #F7CA18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+
+.answers li { 
+list-style: upper-alpha; 
+} 
+
+label { 
+margin-left: 0.5em; 
+cursor: pointer; 
+} 
+
+#results { 
+background: #dddada; 
+color: 000000; 
+padding: 3px; 
+text-align: center; 
+width: 200px; 
+cursor: pointer; 
+border: 1px solid gray; 
+}
+
+#results:hover { 
+background: #3d91b8; 
+color: #ffffff; 
+padding: 3px; 
+text-align: center; 
+width: 200px; 
+cursor: pointer; 
+border: 1px solid gray; 
+} 
+
+#categorylist { 
+margin-top: 6px; 
+display: none; 
+} 
+
+#category1, #category2, #category3, #category4, #category5, #category6, #category7, #category8, #category9, #category10, #category11 { 
+display: none; 
+}
+
+#closing {
+display: none;
+font-style: italic;
+}
+
+
+ #toTop{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+
+h3{
+    color: rgb(44, 46, 119);
+}
+
+table, td, th {
+    border: 4px solid #306a84;
+    text-align: center;
+    padding: 6px;
+    font-size: 15px;
+}
+
+.prettyprint{
+    font-size: 17px;
+    font-family: 'Trirong',serif;
+    background-color: #192c40;
+    color: white;
+}
+
+ul,li{
+  font-size: 15px;
+   color: #0c0c0c;
+   font-family: Open Sans;
+}
+
+h3,h4{
+    padding: 5px;
+    display: block;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
+    transition: all 0.2s ease-in-out;
+    color:#FD1203;
+    font-size: 20px;
+}
+
+
+.myBreadcrumb {
+    display: inline-block;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.myBreadcrumb > * {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: left;
+    line-height: 36px;
+    color: black;
+    /*need more margin on the left of links to accomodate the numbers*/
+    padding: 0 10px 0 30px;
+    background: white;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.myBreadcrumb > * div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+
+/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+.myBreadcrumb > *:first-child {
+    padding-left: 10px;
+    border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+}
+
+.myBreadcrumb >*:first-child i {
+    vertical-align: sub;
+}
+
+.myBreadcrumb > *:last-child {
+    border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+    padding-right: 20px;
+    padding-right: 8px;
+}
+
+/*hover/active styles*/
+.myBreadcrumb a.active, .myBreadcrumb a:hover{
+    background: #0e5f84;
+}
+.myBreadcrumb a.active:after, .myBreadcrumb a:hover:after {
+    background:  #013e8c;
+}
+
+/*adding the arrows for the myBreadcrumbs using rotated pseudo elements*/
+.myBreadcrumb > *:after {
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: -18px; /*half of square's length*/
+    /*same dimension as the line-height of .myBreadcrumb a */
+    width: 36px; 
+    height: 36px;
+    /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+    length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+    if diagonal required = 1; length = 1/1.414 = 0.707*/
+    transform: scale(0.707) rotate(45deg);
+    -ms-transform:scale(0.707) rotate(45deg);
+    -webkit-transform:scale(0.707) rotate(45deg);
+    
+    /*we need to prevent the arrows from getting buried under the next link*/
+    z-index: 1;
+    /*background same as links but the gradient will be rotated to compensate with the transform applied*/
+    background: white;
+    /*stylish arrow design using box shadow*/
+    box-shadow: 
+        2px -2px 0 2px rgba(0, 0, 0, 0.4), 
+        3px -3px 0 2px rgba(255, 255, 255, 0.1);
+    /*
+        5px - for rounded arrows and 
+        50px - to prevent hover glitches on the border created using shadows*/
+    border-radius: 0 5px 0 50px;
+    transition: all 0.5s;
+}
+/*we dont need an arrow after the last link*/
+.myBreadcrumb > *:last-child:after {
+    content: none;
+}
+/*we will use the :before element to show numbers*/
+.myBreadcrumb > *:before {
+    /*some styles now*/
+    border-radius: 100%;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 0;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background: white;
+    background: linear-gradient(#444, #222);
+    font-weight: bold;
+    box-shadow: 0 0 0 1px #ccc;
+}
+
+.myBreadcrumb > *:nth-child(n+2) {
+  display:none;
+}
+
+
+@media (max-width: 767px) {
+    .myBreadcrumb > *:nth-last-child(-n+4) {
+        display:block;
+    } 
+    .myBreadcrumb > * div {
+        max-width: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .myBreadcrumb > *:nth-last-child(-n+6) {
+        display:block;
+    } 
+    .myBreadcrumb > * div {
+        max-width: 275px;
+    }
+}
+
+.site{
+    font-size:18px;
+      margin: 0 auto;
+      color: #333;
+  }
+  .price{
+    font-size:18px;
+      margin: 0 auto;
+      color: #333;
+  }
+  .right{
+    font-size:11px;
+    float:right;
+    border-bottom: 2px solid #053b52;
+  }
+  .thumbnail{
+    opacity:0.70;
+    -webkit-transition: all 0.5s; 
+    transition: all 0.5s;
+    width: 70%;
+  }
+  .thumbnail:hover{
+    opacity:1.00;
+    box-shadow: 0px 0px 10px #4bc6ff;
+  }
+  .line{
+    margin-bottom: 0px;
+  }
+  @media screen and (max-width: 770px) {
+    .right{
+      float:left;
+      width: 100%;
+    }
+  }
+
+  h1{
+    font-family: 'Trirong', serif;
+    color: #FF3402;
+    font-weight: bold;
+  }
+
+  th{
+  background-color: #183d47;
+    color: #FFF;
+}

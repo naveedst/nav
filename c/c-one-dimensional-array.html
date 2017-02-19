@@ -1,0 +1,497 @@
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        <title>One dimensional Array|Navtutorials | Computer Science Portal</title>
+        <!-- Meta -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Learn One dimensional Array in c Programming by navtutorials in simple and easy method">
+        <meta name="author" content="">
+        <meta name="keywords" itemprop="keywords" content="c programming, c tutorials, c tutorial, History of c, Dennis Ritchie, Bell Labs,Kernighan Ritchie,two-phase compiler,stand alone, object file,library code,Uses of c, applications of c, computer applications,Embedded software’s,micro-controllers, lower level, machine dependent language,Operating System Operations,Structure of C Program, alpahabets, digits, special symbols, constants, varables, keywords,instruction, program,navtutorials.com, navtutorials, nav, newtutorials."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- Favicon -->
+        <link href="favicon.png" rel="shortcut icon">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+        <!-- Google Fonts-->
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans:300,400" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source Sans Pro:300,400" />
+    </head>
+    <body>
+        <div id="body_bg">
+            <div id="container_header" class="container">
+                <div id="header" class="row">
+                    <div class="col-md-12 margin-top-15">
+                       <!-- Header Social Icons -->
+                        <ul class="social-icons circle pull-right">
+                           
+                            <li class="social-facebook">
+                                <a href="https://www.facebook.com/NavtutorialsIN/" target="_blank" title="Facebook"></a>
+                            </li>
+                            <li class="social-googleplus">
+                                <a href="https://plus.google.com/u/0/111089436273142477389" target="_blank" title="GooglePlus"></a>
+                            </li>
+                            <li class="social-twitter">
+                                <a href="https://twitter.com/NavTutorials" target="_blank" title="Twitter"></a>
+                            </li>
+                            <li class="social-linkedin">
+                               <a href="https://www.linkedin.com/profile/view?id=AAIAAAUe1O0BsSQob9G2XhrvBPmuLdFNQec1xYo&trk=nav_responsive_tab_profile" target="_blank" title="linkedin"></a> 
+                            </li>
+                             <li class="social-pinterest">
+                                <a href="https://in.pinterest.com/navtutorials1/" target="_blank" title="pinterest"></a>
+                            </li>
+                            
+                        </ul>
+                        <!-- End Header Social Icons -->
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="primary-container-group">
+                <!-- Background -->
+                <div class="primary-container-background">
+                    <div class="primary-container"></div>
+                    <div class="clearfix"></div>
+                </div>
+                <!--End Background -->
+                <div class="primary-container">
+                    <div id="container_hornav" class="container no-padding">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="../index.html">
+                                <img src="assets/img/logo.png" alt="Logo" />
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                        <!-- Slogan -->
+                        <p class="site-slogan">COMPUTER SCIENCE PORTAL</p>
+                        <!-- End Slogan -->
+                        <!-- Top Menu -->
+                        <div class="row">
+                            <div class="hornav-block">
+                                <div id="hornav" class="pull-right">
+                                    <ul id="hornavmenu" class="nav navbar-nav">
+                                        <li>
+                                            <a href="../index.html">Home</a>
+                                        </li>
+                            <li><span>Tutorials</span>
+                                <ul>
+                                <li><a href="../programming-library.html">Programming</a></li>
+                                <li><a href="../academic-library.html">Academic</a></li>
+                                <li><a href="../web-programming-library.html">Web Programming</a></li>
+                                <li><a href="../exam-prepration-library.html">Entrance Exams</a></li>  
+                                <li><a href="../aptitude/aptitude-library.html">General Aptitude</a></li>
+                                <li><a href="../verbal/verbal-library.html">Verbal Reasoning</a></li>
+                            </ul>
+                        </li>
+
+                        <li><span>Interview</span>
+                            <ul>
+                                <li><a href="../interview_section/interview-question-index.html">Interview Questions</a></li>
+                                <li><a href="../code-snippets-library.html">Code Snippets</a></li>
+                                <li><a href="../freshers.html">Freshers</a></li>
+                            </ul>
+                        </li>
+
+                        <li><span>Blog</span>
+                            <ul>
+                                <li><a href="../blog.html">Blog</a></li>
+                                <li><a href="../article.html">Articles</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="../books.html">Books</a></li>
+                        <li><a href="../contact-us.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!-- End Top Menu -->
+                    </div>
+                    <div class="container no-padding">
+                        <!-- === END HEADER === -->
+                    <div id="content" class="container">
+            <!-- === BEGIN CONTENT === -->    
+            <div class="row margin-vert-30">
+            <!-- Begin Sidebar Menu -->
+             <div class="col-sm-3">
+                <ul class="list-group sidebar-nav" id="sidebar-nav">                    
+                    
+                   <!-- Home -->
+                    <li class="list-group-item">
+                       <a href="c-library.html">C-Home</a>
+                    </li>
+                    <!-- End of home-->                    
+                    <!-- Fundamentals in c -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-fundamental">Fundamentals in C</a>
+                        <ul id="collapse-fundamental" class="collapse">
+                            <li><a href="c-keywords.html"></i>Keywords and Constants</a></li>
+                            <li><a href="c-data-types.html">Data Types</a></li>
+                            <li><a href="c-input-functions.html">Input/Output Functions</a></li>
+                            <li><a href="c-operators.html">Operators in C</a></li>
+                        </ul>
+                    </li>
+                    <!-- End of Fundamentals in c -->
+                    <!-- Control statements -->
+                    <li class="list-group-item list-toggle">
+                        <a class="accordion-toggle" href="#collapse-control" data-toggle="collapse">Control Statements in C</a>
+                        <ul id="collapse-control" class="collapse">
+                            <li><a href="c-if-statement.html"></i>if.. else statement</a></li>
+                            <li><a href="c-do-while-loop.html"></i>do.. while loop</a></li>
+                            <li><a href="c-while.html"></i>While loop</a></li>
+                            <li><a href="c-for-loop.html"></i>for loop</a></li>
+                            <li><a href="c-switch.html">Switch Statement</a></li>
+                            <li><a href="c-break.html">break statement</a></li>
+                            <li><a href="c-continue.html">Continue Statement</a></li>
+                            <li><a href="c-goto-statement.html">goto statement</a></li>
+                            <li><a href="c-return.html">return statement</a></li>
+                        </ul>
+                    </li>                    
+                    <!-- End Control statements -->
+                    <!-- Arrays -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-arrays">Arrays</a>
+                        <ul id="collapse-arrays" class="collapse">
+                            <li><a href="c-one-dimensional-array.html">Single dimensional Array</a></li>
+                            <li><a href="c-two-dimensional-array.html">Two dimensional Array</a></li>
+                            <li><a href="c-three-dimensional-array.html">Three dimensional Array</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Arrays -->
+                    <!-- Functions -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-functions">Functions</a>
+                        <ul id="collapse-functions" class="collapse">
+                            <li><a href="c-functions.html">Parts of function</a></li>
+                            <li><a href="c-formal-arguments.html">Formal&Actual Arguments</a></li>
+                            <li><a href="c-recursive-function.html">Recursive Function</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Functions -->
+                    <!-- Strings -->                    
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-strings">Strings</a>
+                        <ul id="collapse-strings" class="collapse">
+                            <li><a href="c-characters.html">Characters</a></li>
+                            <li><a href="c-strings.html">Strings</a></li>
+                            <li><a href="c-strlen.html">strlen()</a></li>
+                            <li><a href="c-strcpy.html">strcpy() and strncpy()</a></li>
+                            <li><a href="c-strcat.html">strcat()</a></li>
+                            <li><a href="c-strcmp.html">strcmp() and strnicmp()</a></li>
+                            <li><a href="c-strupr.html">strupr() and strlwr()</a></li>
+                            <li><a href="c-strrev.html">strrev()</a></li>
+                            <li><a href="c-strchr.html">strchr()</a></li>
+                            <li><a href="c-strstr.html">strstr()</a></li>
+                        </ul>
+                    </li>
+                    <!-- End of Strings -->                    
+                   <!-- Storage classes -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-storage">Storage Classes</a>
+                        <ul id="collapse-storage" class="collapse">
+                            <li><a href="c-automic-storage.html">Automic storage class</a></li>
+                            <li><a href="c-register-storage.html">Register storage class</a></li>
+                            <li><a href="c-static-storage.html">static storage class</a></li>
+                            <li><a href="c-external-storage-class.html">External storage class</a></li>
+                            <li><a href="c-local-variables.html">Local variables</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Storage classes -->
+                    <!-- Pointers -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-pointers">Pointers</a>
+                        <ul id="collapse-pointers" class="collapse">
+                            <li><a href="c-pointers.html">Pointers arithmetic</a></li>
+                            <li><a href="c-dynamic-memory-allocation.html">Dynamic Memory</a></li>
+                            <li><a href="c-array-pointers.html">Array of pointers</a></li>
+                            <li><a href="c-function-pointers.html">Function pointers</a></li>
+                            <li><a href="c-callback.html">callback mechanism</a></li>
+                            <li><a href="c-dangling-pointers.html">Dangling pointers</a></li>
+                            <li><a href="c-near-pointers.html">Near,far&huge pointers</a></li>
+                            <li><a href="c-generic-pointer.html">Generic pointer</a></li>
+                            <li><a href="c-size-of-pointer.html">size of a Pointer</a></li>
+                            <li><a href="c-pointer-to-pointer.html">Pointer to pointer</a></li>
+                            <li><a href="c-pointer-advantage.html">Advantages&Disadvantages</a></li>
+                        </ul>
+                    </li>
+                    <!-- End of Pointers -->
+                    <!-- Structures and unions -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-structures">Structures and Unions</a>
+                        <ul id="collapse-structures" class="collapse">
+                            <li><a href="c-structures.html">Structures</a></li>
+                            <li><a href="c-structure-pointer.html">Structure pointer</a></li>
+                            <li><a href="c-array-of-structure.html">Array of structures</a></li>
+                            <li><a href="c-array-pointers-to-structures.html">Pointers to structures</a></li>
+                            <li><a href="c-nested-structure.html">Nested Structures</a></li>
+                            <li><a href="c-union.html">Union</a></li>
+                        </ul>
+                    </li>
+                    <!-- Structures and Unions-->
+                    <!-- Files -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-files">Files</a>
+                        <ul id="collapse-files" class="collapse">
+                            <li><a href="c-files.html">Files concepts</a></li>
+                            <li><a href="c-files-with-character.html">Files with characters</a></li>
+                            <li><a href="c-files-with-strings.html">Files with strings</a></li>
+                            <li><a href="c-binary-files.html">Binary files</a></li>
+                            <li><a href="c-random-access-of-file.html">Random accessing of file</a></li>
+                        </ul>
+                    </li> 
+                    <!-- End of files -->
+                    <!-- command line-->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-commandline">Command Line</a>
+                        <ul id="collapse-commandline" class="collapse">
+                            <li><a href="c-command-line-arguments.html">Command line</a></li>
+                            <li><a href="c-show-command.html">Show Command</a></li>
+                            <li><a href="c-cpy-command.html">copy command</a></li>
+                            <li><a href="c-destroy-command.html">destroy command</a></li>
+                            <li><a href="c-fresh-command.html">fresh command</a></li>
+                        </ul>
+                    </li>
+                    <!-- End of Command line -->
+            </div>
+            <!-- End Sidebar Menu --> 
+
+                     <div class="col-sm-9">
+
+            <div style="margin-left:03px;margin-top:10px;">
+                <div id="bc2" class="myBreadcrumb">
+                <a href="../index.html" class="active"><i class="fa fa-home fa-2x"></i></a>
+                <a href="../programming-library.html">Programming Library</a>
+                <a href="c-one-dimensional-array.html"><div>Single dimensional Array</div></a>
+            </div> 
+                <h1><B><center>Single dimensional Array</B></cemter></h1>
+
+                <HR>
+                 <h3><b> Array:</b></h3><br>    
+                 <p><li>Array is a variable to store group of elements of same datatype. In array we can store only one type of elements into an array.We can store only integer numbers into an array.We can store only characters into an array.</li></p>
+                 <p><li>In array we cannot store different tyes of elements into the same array. For example, it is not possible to store an integer, a float type number and a character together in the same way.</li></p>
+                 <p><li>An arry is generally written using square braces after its name, as nav[]. In the square braces,we writ the position number of the element starting from 0,1,2,3...etc. 
+
+                 <pre class="prettyprint prettyprinted">
+<code><span class="str"><B>Example:</B> nav[3];</span>
+</code></pre>
+                <p> In above example, nav[0] represents first element, nav[1] represents second element, nav[3] represents third element. Here o,1,2.. are called subscript or index. That is the reason an array is also called 'subscripted variable' or 'indexed variable'.</li></p>
+
+                <h3><B>Single dimensional array:</B></h3><BR>
+
+                <p><li>A 1D array represents a single row or single column of elements. For examples marks obtained by students in 5 subjects. These marks can be written as a row or as a column. So,it becomes an example for 1D array.</p></li>
+                <p><li>A row represents horizontal arrangement of elements and a column represents vertical arrangements of elements.</li></p>
+
+                <center><img src="1darray.jpg"></center>
+
+               <p><li>1D array can be created in two ways. The first way is that we can declare 1D array and then store elements into that array. A 1D array can be declared with a pair of square braces after the array name as show below:</p>
+                
+                <pre class="prettyprint prettyprinted">
+<code><span class="str">int marks[5];</span>
+</code></pre>
+                <p>Here, the array type is 'int'. So, we can store integer type elements into this array. One pair of square braces represents that it is a 1D array. In the square braces the number 5 represents the size of the array. This means we can store up to 5 elements into the array.</li></p>
+                <p><li>Currently there are no elements stored in this array. To store 5 integer type elements into this array, we can use a loop as.</li></p>
+
+                <pre class="prettyprint prettyprinted">
+<code><span class="str">for(i=0; i<5; i++)</span>
+<span class="str">scanf("%d",&marks[i]);</span>
+</code></pre>       
+                
+                <p><li>The second way of creating 1D array is to declare as well as initialize the array using a single statemtent as:</p>
+
+                <pre class="prettyprint prettyprinted">
+<code><span class="str">int marks[]={10,20,30,40,50} ;</span>
+</code></pre>    
+                <p>Here, the size of the array is not needed. Since there are only 5 elements, the array will assume the size of 5. If we want, we can also write the size of the array as:</p>
+
+                <pre class="prettyprint prettyprinted">
+<code><span class="str">int marks[5]={10,20,30,40,50};</span>
+</code></pre>
+                <p>In above example,the compiler will allot 5 continuous blocks of memory and stores the elements as shown in below.</p>
+
+                <center><img src="1dstorage.jpg"></center>
+                <center><caption><b>fig:</b> Storage of elements in a 1D array</caption></center>
+                
+                <p>In above figure, marks[0] represents the first element 10, marks[1] represent the second element 60, and so on.</li></p> 
+
+                <p><li>The element position number in the array is represented by 0,1,2,3 and 4. This is called index of the array. A 1D array will have only one index that represents the element position number.</p>
+
+                <pre class="prettyprint prettyprinted">
+<code><span class="str"><B>Example:</B>char name[]= { 'Z','O','N','E','\0'};
+<span class="str">               or</span>
+<span class="str">char name[5]={'Z','O','N','E','\0'};</span></span>
+</code></pre>
+                <p>Here, we are declaring name[] as 1D array of char type and storing the characters ZONE. While storing th characters we stored \0 as the last character. '\0' represents NULL character which represents the end of a string. Because of \0, the compiler will be able to understand where to stop when retrieving the characters from memory.
+
+                <center><img src="1dstoragelements.jpg"></center>
+                <center><caption><B>fig:</B>  Storage of elements in a character type 1D array</caption></center>
+                </li></p>
+
+                <h3><B>Note:</B></h3><BR>
+                <p><li>Array index always starts with zero.</li></p>
+
+                 <div>
+                    <ul class="pager">
+                        <li class="previous"><a href="c-return.html">&larr; Previous</a></li>
+                        <li class="next"><a href="c-two-dimensional-array.html">Next &rarr;</a></li>
+                    </ul>
+                </div>
+
+                </div>
+                <!-- End Sample Menu -->                
+            </div>
+        </div>
+    </div>
+    </div> 
+
+          <!-- === BEGIN FOOTER === -->
+                    
+                    <div id="base" class="container padding-vert-30">
+                        <div class="row">
+                            
+                            <!-- Contact Details -->
+                            <div class="col-md-3">
+                                <h3 class="margin-bottom-10"><b>Contact Details</b></h3>
+                                <p>Vantmuri cross,
+                                    <br />Belgaum,
+                                    <br />Karnataka,
+                                    <br />India
+                                </p>
+                                <p>Email:
+                                    <a href="mailto:navtutorials@gmail.com">navtutorials@gmail.com</a>
+                                    <br />Website:
+                                    <a href="http://navtutorials.com">www.navtutorials.com</a>
+                                </p>
+                            </div>
+                            <!-- End Contact Details -->
+
+                             <!-- Sample Menu -->
+                            <div class="col-md-3">
+                                <h3 class="margin-bottom-10"><b>About Us</b></h3>
+                                <ul class="menu">
+                                    <li>
+                                        <a href="../about-us.html">Our Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="../services.html">Services</a>
+                                    </li>
+                                    <li><a href="../advertise.html">Advertise</a></li>
+                                    <li>
+                                        <a href="../privacy-policy.html">Privacy Policy</a>
+                                    </li>
+                                    
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- End Sample Menu -->
+
+                             <!-- Sample Menu -->
+                             <div class="col-md-3">
+                                <h3 class="margin-bottom-10"><b>Programming</b></h3>
+                                <ul class="menu">
+                                     <li><a href="../java/java-library.html">Java</a></li>
+                                    <li>
+                                        <a href="../algorithms/algo-library.html">Algorithms</a>
+                                    </li> 
+                                    <li>
+                                        <a href="../c/c-library.html">C Programming</a>
+                                    </li>
+                                    <li>
+                                        <a href="../datastructure/datastructures-library.html">Data structures</a>
+                                    </li>                                                    
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- End Sample Menu -->
+                            <!-- Sample Menu -->
+                            <div class="col-md-3">
+                                <h3 class="margin-bottom-10"><b>Entrance Exams</b></h3>
+                                <ul class="menu">
+                                    <li>
+                                        <a href="../gatecse/gate-library.html">Gate</a>
+                                    </li>
+                                    <li>
+                                        <a href="../gre/gre-library.html">GRE</a>
+                                    </li>
+                                    <li>
+                                        <a href="../cat/cat-library.html">CAT</a>
+                                    </li>
+                                    <li><a href="../aptitude/aptitude-library.html">Aptitude</a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- End Sample Menu -->
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <!-- Footer Menu -->
+                    <div id="footermenu" class="container">
+                        <div class="row">
+                           <div id="copyright">
+                            <p>(c) 2017 www.navtutorials.com All Rights Reserved.</p>
+                         </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <!-- End Footer Menu -->
+                </div>
+            </div>
+        </div>
+        <!-- JS -->
+        <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/scripts.js"></script>
+        <!-- Isotope - Portfolio Sorting -->
+        <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+        <!-- Mobile Menu - Slicknav -->
+        <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+        <!-- Animate on Scroll-->
+        <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+        <!-- Modernizr -->
+        <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+        <!-- End JS -->
+        <!--Top-->
+        <script type="text/javascript">
+        $(document).ready(function(){
+      $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> Back to Top</div>');
+        $(window).scroll(function () {
+            if ($(this).scrollTop() != 0) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        }); 
+    $('#toTop').click(function(){
+        $("htmdsl, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+    });
+</script>
+        <!--End back to top-->
+
+    <!-- Google Analytics Tacking Snippet -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90676044-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    </body>
+</html>
+<!-- === END FOOTER === -->
